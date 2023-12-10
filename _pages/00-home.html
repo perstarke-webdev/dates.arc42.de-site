@@ -1,0 +1,22 @@
+---
+title: Basic Homepage
+layout: splash
+permalink: /
+header:
+  overlay_image: /images/splash/webdev.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  overlay_filter: rgba(0, 0, 0, 0.6)
+excerpt: "**Lorem Ipsum**"
+---
+
+<script src="https://unpkg.com/htmx.org@1.9.6"
+        integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni"
+        crossorigin="anonymous"></script>
+
+<div hx-get="https://python-hello-world.vercel.app/api"
+     hx-trigger="load delay"
+     hx-swap="innerHTML"
+     hx-target="#test-id">
+</div>
+
+<div id="test-id">TEST</div>
