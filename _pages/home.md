@@ -30,7 +30,7 @@ Free and open source, **takes the pain out of documentation**."
 <div id="subtle-ads">
   <h4>arc42 offers architecture training.</h4>
   <p>
-    The data is currently loaded from the backend and should display here shortly.
+    The schedule for upcoming trainings is currently loaded from our backend and should display here shortly.
     If not, you can see the next dates at
     <a rel="noopener noreferrer nofollow" target="_blank" href="https://dates.arc42.org">
       dates.arc42.org
