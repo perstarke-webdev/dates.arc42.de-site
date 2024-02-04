@@ -3,7 +3,9 @@
 # helper, so you don't need to remember docker-compose syntax...
 
 # what's the site?
-site="basic-homepage.de"
+site="dates.arc42.org"
+
+remotedir="."
 
 # some colors to highlight certain output
 GREEN=`tput setaf 2`
@@ -38,16 +40,19 @@ fi
 
 case "$choice" in
   b|B|build) echo "build Docker image"
-                     docker-compose --file docker-compose.yml build --force-rm
-                     ;;
+        docker-compose --file _docker-compose-dev.yml build --force-rm
+        ;;
 
   d|D|dev|develop) echo "develop, incremental build"
-                   docker-compose --file docker-compose.yml up
-                   ;;
+        rm -r _site
+        docker-compose --file _docker-compose-dev.yml up
+        ;;
 
   r|R|remove) echo "remove running docker container"
-             docker-compose --file docker-compose.yml down
+             docker-compose --file _docker-compose-dev.yml down
              ;;
+
+  
 
 
   # catchall: abort

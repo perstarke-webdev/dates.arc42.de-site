@@ -1,8 +1,6 @@
 # main links
 main:
-  - title: "Home"
+  - title: "Training dates"
     url: /
-  - title: "Impressum"
-    url: /imprint
-
-
+  - title: "Contact"
+    url: /contact
